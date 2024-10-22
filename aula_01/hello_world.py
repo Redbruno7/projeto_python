@@ -1,9 +1,5 @@
-# Curso Técnico de Desenvolvimento de Sistemas
-# Turma: 0392
-# Autor: Bruno C. Rodgers
-# Data: 22/10/2024
-
 # AULA 01 - PRIMEIRO PROGRAMA
+# Data: 22/10/2024
 
 # Importar bibliotecas
 import os
