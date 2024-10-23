@@ -13,7 +13,7 @@ nome = 'Bruno C. Rodgers'
 nascimento = 1999
 altura = 1.78
 peso = 67.3
-carinhoso = True
+aprovado = True
 complexo = 3j # Python trabalha diretamente com números complexos
 PI = 3.14 # CONSTANTE, seu valor não deve ser alterado
 
@@ -23,7 +23,7 @@ print('A variável nome é do tipo: ', type(nome))
 print('A variável nascimento é do tipo', type(nascimento))
 print('A variável altura é do tipo', type(altura))
 print('A variável peso é do tipo', type(peso))
-print('A variável carinhoso é do tipo', type(carinhoso))
+print('A variável aprovado é do tipo', type(aprovado))
 print('A variável complexo é do tipo', type(complexo))
 print('A variável PI é do tipo', type(PI))
 print('-' * 70)
