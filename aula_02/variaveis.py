@@ -1,4 +1,4 @@
-# AULA 01 - PRIMEIRO PROGRAMA
+# AULA 02 - VARIÁVEIS
 # Data: 22/10/2024
 
 import os
