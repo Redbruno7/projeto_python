@@ -20,4 +20,4 @@ numero_2 = float(input('Entre com a raiz: '))
 raiz = numero_1 ** (1 / numero_2)
 
 # Saída de Dados
-print(f'A raiz de {numero_1} por {numero_2} é {raiz:.2f}')
+print(f'A raiz de índice {numero_2} de {numero_1} é: {raiz:.2f}')
