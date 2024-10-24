@@ -1,7 +1,7 @@
-# AULA 04 - OPERAÇÕES ARITMÉTICAS
+# AULA 05 - OPERAÇÕES ARITMÉTICAS
 # Data: 24/10/2024
 
-# # Importar biblioteca do sistema operacional
+# Importar biblioteca do sistema operacional
 import os
 
 # Limpar terminal
