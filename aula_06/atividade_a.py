@@ -1,0 +1,30 @@
+# AULA 06 - ATIVIDADE A
+# Data: 29/10/2024
+# A EMPRESA "TECHSOLUTIONS" CONTRATOU VOCÊ PARA DESENVOLVER UM PROGRAMA EM PYTHON QUE IRÁ AUTOMATIZAR UMA PARTE DO SEU SISTEMA DE PROCESSAMENTO DE DADOS.
+# ELES PRECISAM DE UM PROGRAMA QUE SOLICITE AO USUÁRIO A ENTRADA DE UM NÚMERO INTEIRO E, EM SEGUIDA, VERIFIQUE SE ESSE NÚMERO É PAR OU ÍMPAR. 
+# ESSA FUNCIONALIDADE É ESSENCIAL PARA O SISTEMA DELES, POIS ELES PROCESSAM GRANDES CONJUNTOS DE DADOS E PRECISAM CLASSIFICAR OS NÚMEROS DE FORMA EFICIENTE 
+# PARA REALIZAR CÁLCULOS ESPECÍFICOS EM CADA TIPO DE NÚMERO.
+
+import os
+
+
+os.system('cls')
+
+# Título
+print('=' * 70)
+print('CARACTERIZAÇÃO NUMÉRICA - TECHSOLUTIONS')
+print('=' * 70)
+
+# Entrada
+numero = int(input('Digite o número inteiro para caracterização: '))
+resposta = ''
+
+# Processamento
+if (numero % 2 == 0):
+    resposta = f'O número {numero} é par!'
+else:
+    resposta = f'O número {numero} é ímpar!'
+
+# Saída
+print(resposta)
+print('~' * 70)

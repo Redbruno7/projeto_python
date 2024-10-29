@@ -1,3 +1,6 @@
+# AULA 06 - OPERADORES LÓGICOS
+# Data: 29/10/2024
+
 import os
 
 
