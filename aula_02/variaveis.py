@@ -2,6 +2,8 @@
 # Data: 22/10/2024
 
 import os
+
+
 os.system('cls')
 
 print('-' * 70)

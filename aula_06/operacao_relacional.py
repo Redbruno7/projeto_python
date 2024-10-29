@@ -2,6 +2,8 @@
 # Data: 29/10/2024
 
 import os
+
+
 os.system('cls')
 
 # Título
@@ -21,7 +23,7 @@ if c == d:
     print('~'*70)
 else:
     print(f'{c} não é igual a {d}')
-    
+
 # Diferença (!=)
 if a != c:
     print('~'*70)
