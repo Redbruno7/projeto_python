@@ -19,15 +19,19 @@ print('=' * 70)
 salario_atual = float(input('Insira o salário atual do funcionário: '))
 resposta = ''
 
+
 # Processamento
-if (salario_atual > 1500):
+if (salario_atual <= 0):
+    resposta = f'Valor inserido inválido!'
+elif (salario_atual > 1500):
     reajuste_1 = salario_atual * 0.05
-    resposta = f'Com o reajuste, o novo salário será de R${salario_atual + reajuste_1:.2f}'
+    resposta = f'O salário reajustado será de R${salario_atual + reajuste_1:.2f}'
 elif (salario_atual <= 1500) and (salario_atual >= 1000):
-    resposta = f'O salário de R${salario_atual:.2f} do funcionário se manterá o mesmo'
+    print(f'O salário de R${salario_atual:.2f} '
+    'do funcionário se manterá o mesmo')
 else:
     reajuste_2 = salario_atual * 0.1
-    resposta = f'Com o reajuste, o novo salário será de R${salario_atual + reajuste_2:.2f}'
+    resposta = f'O salário reajustado será de R${salario_atual + reajuste_2:.2f}'
 
 # Saída
 print(resposta)
