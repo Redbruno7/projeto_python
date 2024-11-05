@@ -1,0 +1,25 @@
+# ATIVIDADE 004 - ATIVIDADE D
+# Data: 05/11/2024
+# FAÇA UM PROGRAMA QUE LEIA UMA FRASE E DEPOIS EXIBA NA TELA:
+# A FRASE EM MINÚSCULAS, A FRASE EM MAIÚSCULAS, A QUANTIDADE DE CARACTERES NA FRASE E QUANTAS LETRAS TEM A 2ª PALAVRA NA FRASE.
+
+import os
+
+
+os.system('cls')
+
+print('=' * 70)
+print('MUDANÇA ESTRUTURAL E INFORMAÇÕES')
+print('=' * 70)
+
+# Entrada
+frase = input('Digite a frase: ')
+
+# Processamento
+minusculo = frase.lower()
+maiusculo = frase.upper()
+qtd_carac = len(frase) # Contagem de caracteres
+lista = frase.split()
+segunda_palavra = lista[:1]
+qtd_caract_2 = len(segunda_palavra)
+print(f'')
