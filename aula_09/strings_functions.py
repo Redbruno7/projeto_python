@@ -25,6 +25,13 @@ print(f'Frase original: {frase_1}')
 print(f'Frase nova: {minusculo}')
 print('.' * 70)
 
+# Frase em maiúsculo
+maiusculo = frase_1.upper()
+print('Frase em maiúsculo:')
+print(f'Frase original: {frase_1}')
+print(f'Frase nova: {maiusculo}')
+print('.' * 70)
+
 # Frase capitalizada
 maiusculo = frase_1.capitalize()
 print('Frase capitalizada:')
