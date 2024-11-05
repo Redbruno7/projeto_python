@@ -12,5 +12,3 @@ print('-' * 70)
 print('Hello World!!!')
 print('-' * 70)
 print()
-
-oasifhaoifhsdoigh
