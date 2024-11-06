@@ -47,7 +47,7 @@ print(f'Frase nova: {sem_espacos}')
 print('.' * 70)
 
 # Trocar palavra
-substituicao = frase_1.replace("Mundo", "Python")
+substituicao = frase_1.replace('Mundo', 'Python')
 print('Trocar palavra:')
 print(f'Frase original: {frase_1}')
 print(f'Frase nova: {substituicao}')

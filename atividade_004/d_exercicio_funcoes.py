@@ -19,7 +19,15 @@ frase = input('Digite a frase: ')
 minusculo = frase.lower()
 maiusculo = frase.upper()
 qtd_carac = len(frase) # Contagem de caracteres
-lista = frase.split()
-segunda_palavra = lista[:1]
-qtd_caract_2 = len(segunda_palavra)
-print(f'')
+lista = frase.split() # Divisão da frase em lista
+segunda_palavra = lista[1:2]
+palavra_2 = ''.join(segunda_palavra)
+qtd_caract_2 = len(palavra_2)
+
+# Saída
+print('.' * 70)
+print(f'Frase em minúsculo: {minusculo}')
+print(f'Frase e maiúsculo: {maiusculo}')
+print(f'Quatidade de caracteres da frase: {qtd_carac}')
+print(f'Quantidade de caracteres da segunda palavra: {qtd_caract_2}')
+print('=' * 70)
