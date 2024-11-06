@@ -12,3 +12,12 @@ print('SEPARAÇÃO DE NOME COMPLETO')
 print('=' * 70)
 
 # Entrada
+frase = input('Digite seu nome completo: ')
+
+# Processamento
+lista = frase.split()
+
+# Saída
+print('.' * 70)
+print(f'{lista}')
+print('=' * 70)
