@@ -30,3 +30,5 @@ print(f'{inversao}')
 print(f'{nome}')
 print(f'{sobrenome}')
 print('=' * 70)
+
+teste aiai
