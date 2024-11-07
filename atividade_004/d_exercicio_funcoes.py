@@ -20,9 +20,7 @@ minusculo = frase.lower()
 maiusculo = frase.upper()
 qtd_carac = len(frase) # Contagem de caracteres
 lista = frase.split() # Divisão da frase em lista
-segunda_palavra = lista[1:2]
-palavra_2 = ''.join(segunda_palavra)
-qtd_caract_2 = len(palavra_2)
+qtd_caract_2 = len(lista[1]) # Contagem da segunda palavra da lista
 
 # Saída
 print('.' * 70)

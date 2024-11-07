@@ -13,11 +13,11 @@ print('=' * 70)
 
 # Entrada
 nome = input('Digite seu nome Completo: ')
-print('.' * 70)
 
 # Processamento e Saída
-upper_case = nome.upper()
-if "OLIVEIRA" in upper_case:
+print('.' * 70)
+nome_lower = nome_lower.lower()
+if "OLIVEIRA" in nome_lower:
     print('Então quer dizer que você é do clã oculto dos Oliveiras!')
 else:
     print('Não é da família Oliveira!')
