@@ -16,17 +16,18 @@ nome_completo = input('Digite seu nome completo: ')
 
 # Processamento
 minusculo = nome_completo.lower()
-lista_1 = minusculo.split()
-inversao = lista_1[::-1]
-nome = lista_1[0:1]
-sobrenome = inversao[0:1]
+lista = minusculo.split()
+lista_inversa = lista[::-1]
+lista_chamada = lista[0:1] + lista_inversa[0:1]
+chamada_capitalizada = [i.capitalize() for i in lista_chamada]
+chamada_final = ' '.join(chamada_capitalizada)
 
 # Saída
 print('.' * 70)
-print(f'Nome e Sobrenome: ')
+print(f'Nome e Sobrenome: {chamada_final}')
 print(f'{minusculo}')
-print(f'{lista_1}')
-print(f'{inversao}')
-print(f'{nome}')
-print(f'{sobrenome}')
+print(f'{lista}')
+print(f'{lista_inversa}')
+print(f'{lista_chamada}')
+print(f'{chamada_capitalizada}')
 print('=' * 70)
