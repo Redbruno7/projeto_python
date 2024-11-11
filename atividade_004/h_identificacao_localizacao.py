@@ -12,14 +12,16 @@ print('IDENTIFICAÇÃO E LOCALIZAÇÃO DE LETRA "O"')
 print('=' * 70)
 
 # Entrada
-nome = input('Digite o nome do aluno: ')
+nome = input('Digite o nome do aluno: ').strip()
 
 # Processamento e saída
 print('.'*70)
-if 'o' not in nome:
+minusculo = nome.lower()
+
+if 'o' not in minusculo:
     print('O nome do aluno não possui a letra "o".')
 else:
-    minusculo = nome.lower()
+    
     qtd_o = minusculo.count('o')
     primeiro_o = minusculo.find('o')
     ultimo_o = minusculo.rfind('o')

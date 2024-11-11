@@ -1,7 +1,6 @@
 # ATIVIDADE 004 - ATIVIDADE A
+# ALUSNO: BRUNO C. RODGERS
 # Data: 05/11/2024
-# FAÇA UM PROGRAMA QUE SOLICITE SEPARADAMENTE O NOME, O NOME DO MEIO E O SOBRENOME DE UMA PESSOA. 
-# EM SEGUIDA, IMPRIMA O NOME COMPLETO.
 
 import os
 
@@ -13,14 +12,21 @@ print('JUNÇÃO DE NOMES')
 print('=' * 70)
 
 # Entrada
+print()
+print('=' * 70)
 primeiro_nome = input(f'Digite seu primeiro nome: ')
+print('-' * 70)
 meio_nome = input(f'Digite seu nome do meio: ')
+print('-' * 70)
 ultimo_nome = input(f'Digite seu sobrenome: ')
+print('=' * 70)
 
 # Processamento
 lista = [f'{primeiro_nome}', f'{meio_nome}', f'{ultimo_nome}']
 juncao = ' '.join(lista)
 
 # Saída
+print()
+print('=' * 70)
 print(f'Olá, {juncao}, que nome potente!')
-print(f'=' * 70)
+print('=' * 70)

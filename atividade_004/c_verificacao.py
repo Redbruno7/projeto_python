@@ -16,8 +16,8 @@ nome = input('Digite seu nome Completo: ')
 
 # Processamento e Saída
 print('.' * 70)
-nome_lower = nome_lower.lower()
-if "OLIVEIRA" in nome_lower:
+nome_lower = nome.lower()
+if "oliveira" in nome_lower:
     print('Então quer dizer que você é do clã oculto dos Oliveiras!')
 else:
     print('Não é da família Oliveira!')
