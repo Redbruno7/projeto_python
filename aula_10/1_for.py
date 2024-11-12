@@ -45,6 +45,6 @@ print('Iteração entre cores fornecidas pelo usuário')
 print('-' * 70)
 
 for var_iteradora in range(1,5):
-    cor = str(input(f'Digite a {var_iteradora}ª cor: '))
+    cor = input(f'Digite a {var_iteradora}ª cor: ')
 print('=' * 70)
 print()
