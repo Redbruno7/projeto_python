@@ -8,7 +8,7 @@ os.system('cls')
 
 # Título
 print('=' * 70)
-print('ESTRUTURA DE CONTROLE - VALIDAÇÃO E CASTING')
+print('ESTRUTURA DE CONTROLE - FOR - VALIDAÇÃO E CASTING')
 print('=' * 70)
 print()
 
