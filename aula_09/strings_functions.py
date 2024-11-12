@@ -4,6 +4,8 @@
 import os
 
 
+os.system('cls')
+
 print('=' * 70)
 print('FUNÇÕES DE STRINGS')
 print('=' * 70)

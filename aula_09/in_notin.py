@@ -4,6 +4,8 @@
 import os
 
 
+os.system('cls')
+
 print('=' * 70)
 print('UTILITÁRIOS "IN" E "NOT IN"')
 print('=' * 70)
