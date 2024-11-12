@@ -1,4 +1,4 @@
-# AULA 10 - COMANDO FOR, RANGE
+# AULA 10 - COMANDO FOR
 # Data: 12/11/2024
 
 import os
