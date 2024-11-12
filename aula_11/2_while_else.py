@@ -17,8 +17,8 @@ contador = 1
 
 # Iteração entre 6 números
 print('=' * 70)
-print('Iteração de 6 números e finalização')
-print('-' * 70)
+print('Contagem de 6 números e finalização:')
+print('=' * 70)
 while contador < 7:
     print(f'Contador é: {contador}')
     contador += 1

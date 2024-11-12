@@ -14,6 +14,8 @@ print()
 
 # Iteração de nomes digitados
 print('=' * 70)
+print('Looping para inserção de nomes:')
+print('=' * 70)
 while True:
     nome = input('Digite um nome [s - Sair]: ').lower()
 
