@@ -30,3 +30,4 @@ else:
     print('-' * 70)
     print(f'Bloco While / Else finalizado em {contador}.')
 print('=' * 70)
+teste
