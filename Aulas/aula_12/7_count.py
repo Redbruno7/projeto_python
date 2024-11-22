@@ -20,10 +20,10 @@ entrada_contagem = int(input('Digite o número que deseja contar: '))
 print('=' * 70)
 print()
 
-# Transformaçãoem lista
+# Conversão lista
 lista_inteiros = entrada_numeros.split()
 
-# Conversão para valores inteiros
+# Casting valores inteiros
 for i in lista_inteiros:
     numeros.append(int(i))
 
