@@ -16,3 +16,14 @@ print()
 
 # Entrada
 vogais = ['a', 'e', 'i', 'o', 'u']
+
+# Inversão lista
+vogais_inverso = vogais[::]
+
+# Saída
+print('=' * 70)
+print(f'Lista inicial: {vogais}')
+print('-' * 70)
+print(f'Lista invertida: {vogais_inverso}')
+print('=' * 70)
+print()

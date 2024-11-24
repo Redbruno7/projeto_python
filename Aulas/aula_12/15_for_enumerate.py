@@ -19,7 +19,7 @@ lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Comando "enumerate()" percorre a lista adiciona um índice para cada valor
 # start opcional, para não começar no índice 0
-# "enumerate(lista_numeros, star = 1)"
+# "enumerate(lista_numeros, start = 1)"
 
 # Para cada NÚMERO  dentro da LISTA DE NÚMEROS, enumera com um ÍNDICE
 print('=' * 70)
@@ -28,6 +28,6 @@ for indice, numero in enumerate(lista_numeros):
     print(f'Índice: {indice} = Número: {numero}')
     print('-' * 70)
 
-print(f'A somade todos os números é: {soma}')
+print(f'A soma de todos os números é: {soma}')
 print('=' * 70)
 print()
