@@ -4,12 +4,18 @@
 # Faça um programa que sorteia os números da Mega Sena e da Lotofácil
 
 import os
+import random
 
 
 os.system('cls')
 
 # Título
 print('=' * 70)
-print('')
+print('Simulador de sorteio da Mega Sena e Lotofácil:')
 print('=' * 70)
 print()
+
+# Entrada
+mega_sena = random.sample(range(1, 61), 6)
+
+# Saída

@@ -18,7 +18,7 @@ print(f'O número gerado foi: {numero_aleatorio}')
 print('.' * 70)
 
 # Randomização de número inteiro no intervalo
-print(f'Número  Inteiro Aleatório no Intervalo:')
+print(f'Número Inteiro Aleatório no Intervalo:')
 aleatorio_inteiro = random.randint(1, 20)
 print(f'O número inteiro gerado foi: {aleatorio_inteiro}')
 print('.' * 70)
