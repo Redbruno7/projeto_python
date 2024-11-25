@@ -1,6 +1,6 @@
 # ATIVIDADE 007 - ATIVIDADE A
 # ALUNO: BRUNO C. RODGERS
-# Data: 22/11/2024
+# Data: 25/11/2024
 # Faça um programa que leia um número indeterminado de notas (pressione ‘s’ ou ‘0’ para sair). 
 # Após esta entrada de dados, faça o seguinte:
 # Mostre a quantidade de notas que foram lidas.

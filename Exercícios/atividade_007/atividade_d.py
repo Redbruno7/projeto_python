@@ -1,6 +1,6 @@
 # ATIVIDADE 007 - ATIVIDADE D
 # ALUNO: BRUNO C. RODGERS
-# Data: 22/11/2024
+# Data: 25/11/2024
 # Crie uma lista com 6 nomes, depois verifique se o nome ‘Pedro’ está nessa lista.
 
 import os
