@@ -38,7 +38,7 @@ print()
 # Looping Menu
 while True:
     print('=' * 80)
-    opcao = input('Escolha uma opção (1-5)')
+    opcao = input('Escolha uma opção (1-5): ')
     print('=' * 80)
     print()
         

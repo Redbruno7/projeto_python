@@ -90,7 +90,7 @@ while True:
         
     elif opcao == '4':
         
-        # Mostras os itens (chave-valor) do dicionário
+        # Mostra os itens (chave-valor) do dicionário
         if my_dict:
             print('=' * 80)
             print('Itens do dicionário:', my_dict.items())
