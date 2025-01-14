@@ -20,13 +20,11 @@ while True:
     print('-' * 100)
     print('1. Adicionar um elemento na lista "list.append(dict)".')
     print('-' * 100)
-    print('2. Remover elemento da tabela "del dict[key]"')
+    print('2. Exibir a tabela detalhada.')
     print('-' * 100)
-    print('3. Exibir a tabela detalhada.')
+    print('3. Sair.')
     print('-' * 100)
-    print('4. Sair.')
-    print('-' * 100)
-    opcao = input('Digite uma opção (1-4): ').strip()
+    opcao = input('Digite uma opção (1-3): ').strip()
     print('=' * 100)
     print()
     
@@ -51,26 +49,9 @@ while True:
         print(tabela)
         print('=' * 100)
         print()
-    
-    # Remover elemento da tabela "list.remove(nome)"
-    elif opcao == '2':
-        print('=' * 100)
-        remocao = input('Digite o nome do elemento que deseja remover: ').strip().capitalize()
-        print('-' * 100)
-
-        # Verificar existência de contato "key in dict"
-        if remocao in elementos:
-            del elementos[remocao]
-            print(f'Elemento {remocao} removido.')
-            print('=' * 100)
-            print()
-        else:
-            print(f'Elemento {remocao} não encontrado na agenda.')
-            print('=' * 100)
-            print()
-            
+        
     # Mostrar tabela atualizada
-    elif opcao == '3':
+    elif opcao == '2':
         print('=' * 100)
         print('Tabela detalhada:')
         
@@ -85,7 +66,7 @@ while True:
         print()
         
     # Sair do sistema "break"
-    elif opcao == '4':
+    elif opcao == '3':
         print('=' * 100)
         print('Sistema encerrado.')
         print('=' * 100)

@@ -116,7 +116,7 @@ while True:
     # Remover contato "del dict[key]"
     elif opcao == '2':
         print('=' * 100)
-        nome = input('Diigite o nome do contato que deseja remover: ')
+        nome = input('Digite o nome do contato que deseja remover: ')
         print('-' * 100)
 
         # Verificar existência de contato "key in dict"
