@@ -10,11 +10,17 @@ os.system('cls')
 print('=' * 80)
 print('DICT - MÉTODOS - ITEMS / KEYS / VALUES')
 print('-' * 80)
-print('Sintaxe 1: dicionário.items()')
+
+# Retorna uma visão dos pares chave-valor
+print('Sintaxe 1: dict.items()')
 print('-' * 80)
-print('Sintaxe 2: dicionário.keys()')
+
+# Retorna uma visão das chaves
+print('Sintaxe 2: dict.keys()')
 print('-' * 80)
-print('Sintaxe 3: dicionário.values()')
+
+# Retorna uma visão dos valores
+print('Sintaxe 3: dict.values()')
 print('=' * 80)
 print()
 
