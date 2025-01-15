@@ -10,11 +10,17 @@ os.system('cls')
 print('=' * 80)
 print('DICT - MÉTODOS - FROMKEYS / GET / JOIN')
 print('-' * 80)
-print('Sintaxe 1: variável = dict.fromkeys(chaves, valor)')
+
+# Cria um novo dicionário com as chaves fornecidas e atribui o mesmo valor a todas elas.
+print('Sintaxe 1: variável = dict.fromkeys(keys, value)')
 print('-' * 80)
-print('Sintaxe 2: variável = dicionário.get(chave, valor_padrão)')
+
+# Procura uma chave, se não tiver, assume-se valor padrão
+print('Sintaxe 2: variável = dict.get(key, value_padrao)')
 print('-' * 80)
-print('Sintaxe 3: variável = "separador".join(dicionário.keys())')
+
+# Junta uma sequência de strings com um separador definido
+print('Sintaxe 3: variável = "separador".join(dict.keys())')
 print('=' * 80)
 print()
 
