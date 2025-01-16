@@ -90,9 +90,6 @@ while True:
             'Digite a cor para modificar descrição: ').strip().capitalize()
         print('-' * 80)
         
-        # Iniciar flag
-        find = False
-        
         # Iterar usuário "value = input('')"
         if change in color_dict:
             new_code = input('Digite a nova descrição: ').strip().capitalize()
@@ -100,7 +97,6 @@ while True:
                 
             # Atualizar descrição "dict[key] = value"
             color_dict[change] = new_code
-            find = True
             print('Descrição atualizada.')
             print('=' * 80)
             print()
@@ -129,9 +125,9 @@ while True:
         
         # Exibir relatório "for key, value in sorted(dict.items())"
         for key, value in sorted(letter_count.items()):
-            print(f'{first_letter}: {letter_count}')
-            print('=' * 80)
-            print()
+            print(f'{key}: {value}')
+        print('=' * 80)
+        print()
                 
     # Pausa
     print('=' * 80)
