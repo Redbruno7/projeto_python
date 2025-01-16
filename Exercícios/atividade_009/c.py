@@ -34,7 +34,7 @@ for i in range(5):
     print('=' * 80)
     print()
     
-    # Adicionar par cor-código ao dict "dict[key] = value"
+    # Adicionar par nome-descrição ao dict "dict[key] = value"
     tools_dict[name] = description
 
 # Looping Menu "while True"
