@@ -128,6 +128,21 @@ while True:
             print(f'{key}: {value}')
         print('=' * 80)
         print()
+    
+    # Sair
+    elif option == '4':
+        print('=' * 80)
+        print('Sistema encerrado.')
+        print('=' * 80)
+        print()
+        break
+
+    # Condição para opção
+    else:
+        print('=' * 80)
+        print('Opção inválida. Tente novamente.')
+        print('=' * 80)
+        print()
                 
     # Pausa
     print('=' * 80)

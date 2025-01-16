@@ -10,11 +10,17 @@ os.system('cls')
 print('=' * 80)
 print('DICT - MÉTODOS - LEN / COPY / CLEAR')
 print('-' * 80)
-print('Sintaxe 1: variável = len(dicionário)')
+
+# Conta elementos do dict
+print('Sintaxe 1: variável = len(dict)')
 print('-' * 80)
-print('Sintaxe 2: variável = dicionário.copy()')
+
+# Cria uma cópia do dict
+print('Sintaxe 2: variável = dict.copy()')
 print('-' * 80)
-print('Sintaxe 3: dicionário.clear()')
+
+# Limpa o dict
+print('Sintaxe 3: dict.clear()')
 print('=' * 80)
 print()
 
