@@ -192,16 +192,6 @@ while True:
         print('=' * 80)
         print()
 
-        # Identificar ferramentas com mais de uma palavra "a = [key for key in dict.keys if len(key.split()) > 1]"
-        multi_tool_words = [
-            key for key in wines_dict.keys() if len(key.split()) > 1]
-
-        print('=' * 80)
-        print(f'Quantidade de ferramentas com mais '
-              f'de uma palavra no nome: {len(multi_tool_words)}.')
-        print('=' * 80)
-        print()
-
     # Sair
     elif option == '3':
         print('=' * 80)
