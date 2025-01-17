@@ -38,9 +38,9 @@ for i in range(5):
     print('-' * 80)
     type = input(f'Tipo do vinho: ').strip().capitalize()
     print('-' * 80)
-    content = input(f'Teor alcoólico: ').strip().capitalize()
+    content = float(input(f'Teor alcoólico: '))
     print('-' * 80)
-    harvest = input(f'Safra do vinho: ').strip().capitalize()
+    harvest = int(input(f'Safra do vinho: '))
     print('=' * 80)
     print()
     
@@ -69,15 +69,14 @@ while True:
     list_ordered = sorted(wines_list, key = lambda wine: wine['Nome'])
     
     # Iterar na lista "for i in list"
+    print('=' * 80)
     for i in list_ordered:
-        print('=' * 80)
         
         # Iterar no dict "for key, value in i.items()"
         for key, value in i.items():
             print(f'{key}: {value}')
-        
         print('=' * 80)
-        print()
+    print()
     
     # Menu
     print('=' * 80)
@@ -107,7 +106,7 @@ while True:
         # Iterar na lista "for i in list"
         for i in list_ordered:
         
-        # Condicionar existência "if a in dict"
+        # Condicionar existência "if i['key'] == a"
             if i['Nome'] == change:
                 
                 # Converter flag
@@ -122,13 +121,12 @@ while True:
                     'Digite um novo tipo (aperte Enter para manter): '
                     ).strip().capitalize()
                 print('-' * 80)
-                new_content = input(
-                    'Digite um novo teor alcoólico (aperte Enter para manter): '
-                    ).strip().capitalize()
+                new_content = float(
+                    input('Digite um novo teor alcoólico'
+                          ' (aperte Enter para manter): '))
                 print('-' * 80)
-                new_harvest = input(
-                    'Digite um nova safra (aperte Enter para manter): '
-                    ).strip().capitalize()
+                new_harvest = int(input(
+                    'Digite um nova safra (aperte Enter para manter): '))
                 print('-' * 80)
                     
                 # Iterar no dict "for key, value in dict.items()"
@@ -152,19 +150,45 @@ while True:
     # Relatório
     elif option == '2':
 
-        # Exibir dict inicial ordenado "for key, value in dict.items()"
+        # Iterar na lista "for i in list"
         print('=' * 80)
-        print('Dicionário atual: ')
-        print('-' * 80)
-        for key, value in list_ordered:
-            print(f'{key}: {value}')
-        print('=' * 80)
+        for i in list_ordered:
+        
+        # Iterar no dict "for key, value in i.items()"
+            for key, value in i.items():
+                print(f'{key}: {value}')
+            print('=' * 80)
         print()
 
-        # Contar elementos "a = len(dict)"
-        total_tools = len(wines_dict)
+        # Flag contador teor alcoólico "a = 0"
+        content_count = 0
+
+        # Iterar lista "for i in list"
+        for i in list_ordered:
+
+            # Condicionar existência teor alcoólico "if i['key'] > int"
+            if i['Teor alcoólico'] > 12:
+
+                # Somar flag "a += 1"
+                content_count += 1
+        
+        # Flag contador safra "a = 0"
+        harvest_count = 0
+
+        # Iterar lista "for i in list"
+        for i in list_ordered:
+
+            # Condicionar existência safra "if i['key'] > int"
+            if i['Safra'] > 2015:
+
+                # Somar flag "a += 1"
+                harvest_count += 1
+                    
+        # Saídas
         print('=' * 80)
-        print(f'Quantidade de elementos do dicionário: {total_tools}')
+        print(f'Quantidade de vinhos com teor alcoólico maior que 12.00%: {content_count}')
+        print('-' * 80)
+        print(f'Quantidade de vinhos com safra superior à 2015: {harvest_count}')
         print('=' * 80)
         print()
 
