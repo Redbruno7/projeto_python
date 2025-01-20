@@ -185,7 +185,7 @@ while True:
         # Iterar lista "for i in list"
         for i in movies_sorted:
 
-            # Condicionar existência "if i['key'] > int"
+            # Condicionar existência "if i['key'] == string"
             if i['Classificação indicativa'] == 'Livre':
 
                 # Somar flag "a += 1"
