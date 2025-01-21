@@ -61,7 +61,7 @@ while True:
     print('=' * 80)
     print()
     
-    # Ordenar lista "a = sorted(list, key = lambda a: a['key'])"
+    # Ordenar lista "x = sorted(list, key = lambda a: a['key'])"
     students_sorted = sorted(students_list, key = lambda student: student['Nome'])
     
     # Iterar na lista "for i in list"
