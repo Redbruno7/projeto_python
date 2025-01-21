@@ -126,14 +126,14 @@ while True:
                     ).strip().capitalize()
                 
                 if new_gender:
-                    i['Gênero'] = gender
+                    i['Gênero'] = new_gender
                 print('-' * 80)
 
                 new_duration = input(
                     'Digite uma nova duração em minutos: ').strip()
                 
                 if new_duration:
-                        i['Duração'] = int(duration)
+                        i['Duração'] = int(new_duration)
 
                 print('-' * 80)
                 new_rating = input(
@@ -141,7 +141,7 @@ while True:
                     ).strip().capitalize()
                 
                 if new_rating:
-                        i['Classificação indicativa'] = rating
+                        i['Classificação indicativa'] = new_rating
                 print('-' * 80)
                     
                 print('informações atualizadas com sucesso.')
@@ -167,7 +167,7 @@ while True:
             print('=' * 80)
         print()
 
-        # Flag contador "a = 0"
+        # Contador "a = 0"
         duration_count = 0
 
         # Iterar lista "for i in list"
@@ -179,7 +179,7 @@ while True:
                 # Somar flag "a += 1"
                 duration_count += 1
         
-        # Flag contador safra "a = 0"
+        # Contador "a = 0"
         rating_count = 0
 
         # Iterar lista "for i in list"

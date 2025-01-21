@@ -6,7 +6,7 @@ import os
 
 os.system('cls')
 
-# Definir a função
+# Definir a função "def a(x = string, y = int, w = int, z = float):"
 def dados_paciente(
     nome = 'Coly', nascimento = 2005, peso = 46, altura = 1.68):
     print('=' * 80)
@@ -17,7 +17,7 @@ def dados_paciente(
     print('=' * 80)
     print()
     
-# Invocar função
+# Invocar função "a()"
 dados_paciente()
 dados_paciente(nome='Isis', nascimento=1985, peso=46, altura=1.56)
 dados_paciente(nascimento=2008, nome='Ágata', peso=46, altura=1.58)
