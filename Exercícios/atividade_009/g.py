@@ -1,6 +1,5 @@
-# ATIVIDADE 009 - ATIVIDADE G
 # ALUNO: BRUNO C. RODGERS
-# Data: 14/01/2025
+# Data: 22/01/2025
 # Crie um dicionário com as informações:
 # º Nome: John;
 # º Idade: 40;

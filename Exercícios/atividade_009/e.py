@@ -1,6 +1,5 @@
-# ATIVIDADE 009 - ATIVIDADE E
 # ALUNO: BRUNO C. RODGERS
-# Data: 14/01/2025
+# Data: 22/01/2025
 # Cadastrar 5 alunos, com os dados: 
 # º Nome.
 # º Data de nascimento.
@@ -33,7 +32,7 @@ students_list = []
 # Iterar usuário "for i in range(value)"
 for i in range(5):
     print('=' * 80)
-    name = input(f'Nome do {i + 1}ª aluno: ').strip().capitalize()
+    name = input(f'Nome do {i + 1}º aluno: ').strip().capitalize()
     print('-' * 80)
     birth = int(input(f'Ano de nascimento: '))
     print('-' * 80)
@@ -94,7 +93,7 @@ while True:
     if option == '1':
         print('=' * 80)
         change = input(
-            'Digite o Nome do aluno para alterar seus dados: '
+            'Digite o nome do aluno para alterar seus dados: '
             ).strip().capitalize()
         print('=' * 80)
         print()
@@ -112,7 +111,7 @@ while True:
                 
                 # Itera usuário
                 print('=' * 80)
-                new_name = input('Digite um novo Nome: '
+                new_name = input('Digite um novo nome: '
                     ).strip().capitalize()
                     
                 # Condicionar existência "if a"
