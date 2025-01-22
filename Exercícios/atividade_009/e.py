@@ -14,7 +14,6 @@
 
 
 import os
-import datetime
 
 # Limpar terminal
 os.system('cls')
@@ -36,7 +35,7 @@ for i in range(5):
     print('=' * 80)
     name = input(f'Nome do {i + 1}ª aluno: ').strip().capitalize()
     print('-' * 80)
-    birth = input(f'Data de nascimento: ').strip().capitalize()
+    birth = int(input(f'Ano de nascimento: '))
     print('-' * 80)
     register = int(input(f'Número de matrícula: '))
     print('=' * 80)
@@ -125,11 +124,11 @@ while True:
                     ).strip().capitalize()
                 
                 if new_birth:
-                    i['Data de nascimento'] = new_birth
+                    i['Data de nascimento'] = int(new_birth)
                 print('-' * 80)
 
                 new_register = input(
-                    'Digite uma nova matrícula em minutos: ').strip()
+                    'Digite uma nova matrícula: ').strip()
                 
                 if new_register:
                         i['Matrícula'] = int(new_register)
@@ -152,20 +151,27 @@ while True:
         print('=' * 80)
         print()
 
+        # Tornar falso "x = bool"
+        found = False
+        
         # Iterar na lista "for i in list:"
-        print('=' * 80)
         for i in students_sorted:
 
             # Condicionar existência "if i['string'] == x:"
             if i['Matrícula'] == find:
-
+                print('=' * 80)
+                    
+                # Tornar verdadeiro "x = bool"
+                found = True
+                    
                 # Iterar no dict "for key, value in i.items():"
                 for key, value in i.items():
                     print(f'{key}: {value}')
-            print('=' * 80)
-            print()
-
-        else:
+                print('=' * 80)
+                print()
+        
+        # Condicionar existência "if not x:"     
+        if not found:
             print('=' * 80)
             print('Aluno não encontrado.')
             print('=' * 80)
