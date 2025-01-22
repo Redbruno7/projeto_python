@@ -14,6 +14,7 @@
 
 
 import os
+import datetime
 
 # Limpar terminal
 os.system('cls')
@@ -55,14 +56,14 @@ while True:
     # Limpar Terminal
     os.system('cls')
     
-    # Exibir lista "for key, value in dict.items()"
+    # Ordenar lista "x = sorted(list, key = lambda a: a['key'])"
+    students_sorted = sorted(students_list, key = lambda student: student['Nome'])
+
+    # Título
     print('=' * 80)
     print('Lista atual: ')
     print('=' * 80)
-    print()
-    
-    # Ordenar lista "x = sorted(list, key = lambda a: a['key'])"
-    students_sorted = sorted(students_list, key = lambda student: student['Nome'])
+    print()    
     
     # Iterar na lista "for i in list"
     print('=' * 80)
@@ -120,27 +121,53 @@ while True:
                     i['Nome'] = new_name
                 print('-' * 80)
 
-                new_birth = input('Digite uma nova Data de nascimento: '
+                new_birth = input('Digite uma nova data de nascimento: '
                     ).strip().capitalize()
                 
                 if new_birth:
-                    i['Data de nascimento'] = birth
+                    i['Data de nascimento'] = new_birth
                 print('-' * 80)
 
                 new_register = input(
                     'Digite uma nova matrícula em minutos: ').strip()
                 
                 if new_register:
-                        i['Matrícula'] = int(register)
+                        i['Matrícula'] = int(new_register)
                 print('-' * 80)
                     
-                print('informações atualizadas com sucesso.')
+                print('Dados atualizadas com sucesso.')
                 print('=' * 80)
                 print()
                 break
         else:
             print('=' * 80)
-            print('Filme não encontrado. Tente novamente.')
+            print('Aluno não encontrado. Tente novamente.')
+            print('=' * 80)
+            print()
+
+    # Buscar
+    elif option == '2':
+        print('=' * 80)
+        find = int(input('Digite o número de matrícula do aluno: '))
+        print('=' * 80)
+        print()
+
+        # Iterar na lista "for i in list:"
+        print('=' * 80)
+        for i in students_sorted:
+
+            # Condicionar existência "if i['string'] == x:"
+            if i['Matrícula'] == find:
+
+                # Iterar no dict "for key, value in i.items():"
+                for key, value in i.items():
+                    print(f'{key}: {value}')
+            print('=' * 80)
+            print()
+
+        else:
+            print('=' * 80)
+            print('Aluno não encontrado.')
             print('=' * 80)
             print()
 
@@ -157,36 +184,37 @@ while True:
             print('=' * 80)
         print()
 
-        # Flag contador "a = 0"
-        register_count = 0
+        # Contador "a = 0"
+        birth_count = 0
 
         # Iterar lista "for i in list"
         for i in students_sorted:
 
             # Condicionar existência "if i['key'] > int"
-            if i['Matrícula'] > 120:
+            if i['Data de nascimento'] > 2000:
 
-                # Somar flag "a += 1"
-                register_count += 1
+                # Somar contador "a += 1"
+                birth_count += 1
         
-        # Flag contador safra "a = 0"
-        rating_count = 0
+        # Contador "a = 0"
+        register_count = 0
 
         # Iterar lista "for i in list"
         for i in students_sorted:
 
             # Condicionar existência "if i['key'] == string"
-            if i['Classificação indicativa'] == 'Livre':
+            if i['Matrícula'] % 2 == 1:
 
-                # Somar flag "a += 1"
-                rating_count += 1
+                # Somar contador "a += 1"
+                register_count += 1
                     
         # Saídas
         print('=' * 80)
-        print(f'Quantidade de filmes com mais de 2 horas: {register_count}')
+        print(f'Quantidade de alunos que nasceram após o ano 2000: '
+              f'{birth_count}')
         print('-' * 80)
-        print(f'Quantidade de filmes com classificação indicativa livre: '
-              f'{rating_count}')
+        print(f'Quantidade de alunos com número de matrículas ímpares: '
+              f'{register_count}')
         print('=' * 80)
         print()
 
