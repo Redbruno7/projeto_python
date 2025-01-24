@@ -1,5 +1,5 @@
 # ALUNO: BRUNO C. RODGERS
-# Data: 23/01/2025
+# Data: 24/01/2025
 # Criar função:
 # - Receber 2 números (1-10)
 # Criar menú:
@@ -17,7 +17,7 @@ import os
 def clear_terminal():
     os.system('cls')
 
-# Definir função números "def function(a, b = int, c = int)"
+# Definir função números "def function(par_1, par_2 = int, par_3 = int)"
 def get_numbers(prompt, min_value = 1, max_value = 10):
     print('=' * 80)
     # Criar loop iteração usuário "while bool:"
@@ -32,7 +32,7 @@ def get_numbers(prompt, min_value = 1, max_value = 10):
             # Fazer casting inteiro "a = int(a)"
             num_1 = int(num_1)
 
-            # Condicionar existência número "if arg_2 <= a <= arg_3"
+            # Condicionar existência número "if par_2 <= a <= par_3"
             if min_value <= num_1 <= max_value:
                 return num_1
         
@@ -42,23 +42,23 @@ def get_numbers(prompt, min_value = 1, max_value = 10):
                 print('Número inválido. Tente novamente.')
                 print('-' * 80)
 
-# Definir função operação "def function(a, b, c):"
+# Definir função operação "def function(par_1, par_2, par_3):"
 def perform_operation(numbers, operation, numb_operator):
 
-    # Separar elementos "a, b = arg_1"
+    # Separar argumento "a, b = par_1"
     op_1, op_2 = numbers
 
     # Condicionar operação "if a == int:"
     if operation == 1:
 
-        # Somar "a = elem + arg_2"
+        # Somar "a = elem + par_2"
         result_1 = f'{op_1} + {numb_operator} = {op_1 + numb_operator}'
         result_2 = f'{op_2} + {numb_operator} = {op_2 + numb_operator}'
 
         # Retornar resultado "return a, b"
         return result_1, result_2
 
-    # Subtrair "a = elem + arg_2"
+    # Subtrair "a = elem + par_2"
     elif operation == 2:
         result_1 = f'{op_1} - {numb_operator} = {op_1 - numb_operator}'
         result_2 = f'{op_2} - {numb_operator} = {op_2 - numb_operator}'
@@ -66,7 +66,7 @@ def perform_operation(numbers, operation, numb_operator):
         # Retornar resultado "return a, b"
         return result_1, result_2
 
-    # Multiplicar "a = elem * arg_2"
+    # Multiplicar "a = elem * par_2"
     elif operation == 3:
         result_1 = f'{op_1} * {numb_operator} = {op_1 * numb_operator}'
         result_2 = f'{op_2} * {numb_operator} = {op_2 * numb_operator}'
@@ -74,7 +74,7 @@ def perform_operation(numbers, operation, numb_operator):
         # Retornar resultado "return a, b"
         return result_1, result_2
 
-    # Dividir "a = elem / arg_2"
+    # Dividir "a = elem / par_2"
     elif operation == 4: 
         result_1 = f'{op_1} / {numb_operator} = {op_1 / numb_operator}'
         result_2 = f'{op_2} / {numb_operator} = {op_2 / numb_operator}'
@@ -82,7 +82,7 @@ def perform_operation(numbers, operation, numb_operator):
         # Retornar resultado "return a, b"
         return result_1, result_2
     
-    # Divisão inteira "a = elem // arg_2"
+    # Divisão inteira "a = elem // par_2"
     elif operation == 5:
         result_1 = f'{op_1} // {numb_operator} = {op_1 // numb_operator}'
         result_2 = f'{op_2} // {numb_operator} = {op_2 // numb_operator}'
@@ -90,7 +90,7 @@ def perform_operation(numbers, operation, numb_operator):
         # Retornar resultado "return a, b"
         return result_1, result_2
 
-    # Resto da divisão "a = elem % arg_2"
+    # Resto da divisão "a = elem % par_2"
     elif operation == 6:
         result_1 = f'{op_1} % {numb_operator} = {op_1 % numb_operator}'
         result_2 = f'{op_2} % {numb_operator} = {op_2 % numb_operator}'
@@ -133,7 +133,7 @@ while True:
     menu = print_menu()
     print()
 
-    # Chamar função números "a = function(value_1, value_2, value_3)"
+    # Chamar função números "a = function(arg_1, arg_2, arg_3)"
     option = get_numbers('Escolha uma opção (1-7): ', 1, 7)
     print('=' * 80)
     print()
@@ -145,12 +145,12 @@ while True:
         print()
         break
 
-    # Chamar função números "a = function(value_1, value_2, value_3)" 
+    # Chamar função números "a = function(arg_1, arg_2, arg_3)" 
     numb_operator = get_numbers('Digite um número operador (1-6): ', 1, 6)
     print('=' * 80)
     print()
 
-    # Chamar função operação "a, b = function(value_1, value_2, value_3)"
+    # Chamar função operação "a, b = function(arg_1, arg_2, arg_3)"
     result_1, result_2 = perform_operation(numbers, option, numb_operator)
 
     print('=' * 80)
