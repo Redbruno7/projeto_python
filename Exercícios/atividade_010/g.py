@@ -52,48 +52,48 @@ def perform_operation(numbers, operation, numb_operator):
     if operation == 1:
 
         # Somar "a = elem + arg_2"
-        result_1 = op_1 + numb_operator
-        result_2 = op_2 + numb_operator
+        result_1 = f'{op_1} + {numb_operator} = {op_1 + numb_operator}'
+        result_2 = f'{op_2} + {numb_operator} = {op_2 + numb_operator}'
 
         # Retornar resultado "return a, b"
         return result_1, result_2
 
     # Subtrair "a = elem + arg_2"
     elif operation == 2:
-        result_1 = op_1 - numb_operator
-        result_2 = op_2 - numb_operator
+        result_1 = f'{op_1} - {numb_operator} = {op_1 - numb_operator}'
+        result_2 = f'{op_2} - {numb_operator} = {op_2 - numb_operator}'
 
         # Retornar resultado "return a, b"
         return result_1, result_2
 
     # Multiplicar "a = elem * arg_2"
     elif operation == 3:
-        result_1 = op_1 * numb_operator
-        result_2 = op_2 * numb_operator
+        result_1 = f'{op_1} * {numb_operator} = {op_1 * numb_operator}'
+        result_2 = f'{op_2} * {numb_operator} = {op_2 * numb_operator}'
 
         # Retornar resultado "return a, b"
         return result_1, result_2
 
     # Dividir "a = elem / arg_2"
     elif operation == 4: 
-        result_1 = op_1 / numb_operator
-        result_2 = op_2 / numb_operator
+        result_1 = f'{op_1} / {numb_operator} = {op_1 / numb_operator}'
+        result_2 = f'{op_2} / {numb_operator} = {op_2 / numb_operator}'
 
         # Retornar resultado "return a, b"
         return result_1, result_2
     
     # Divisão inteira "a = elem // arg_2"
     elif operation == 5:
-        result_1 = op_1 // numb_operator
-        result_2 = op_2 // numb_operator
+        result_1 = f'{op_1} // {numb_operator} = {op_1 // numb_operator}'
+        result_2 = f'{op_2} // {numb_operator} = {op_2 // numb_operator}'
 
         # Retornar resultado "return a, b"
         return result_1, result_2
 
     # Resto da divisão "a = elem % arg_2"
     elif operation == 6:
-        result_1 = op_1 % numb_operator
-        result_2 = op_2 % numb_operator
+        result_1 = f'{op_1} % {numb_operator} = {op_1 % numb_operator}'
+        result_2 = f'{op_2} % {numb_operator} = {op_2 % numb_operator}'
 
         # Retornar resultado "return a, b"
         return result_1, result_2
