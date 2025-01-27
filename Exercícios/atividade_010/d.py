@@ -5,8 +5,7 @@
 
 import os
 
-
-# Definir função "def function()"
+# Definir função "def function():"
 def clear_terminal():
     os.system('cls')
 
