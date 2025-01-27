@@ -90,25 +90,23 @@ data_list = [register_dict()]
 
 # Crar loop cadastro
 while True:
-    
-
-
     print('=' * 80)
     next = input('Deseja cadastrar outro aluno? (s/n): ').strip().lower()
     print('=' * 80)
     print()
     
     if next == 's':
-        data_list = [register_dict()]
+        data_list.append(register_dict())
 
     elif next == 'n':
         cls_terminal = clear_terminal()
         break
         
     else:
-        print('-' * 80)
+        print('=' * 80)
         print('Resposta inválida. Tente novamente.')
-        print('-' * 80)
+        print('=' * 80)
+        print()
         
 # Iterar lista cadastro "for i in list:"
 for i in data_list:

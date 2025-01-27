@@ -112,7 +112,6 @@ def print_menu():
     print('7. Sair.')
     print('=' * 80)
 
-
 # Programa Principal:
 print('=' * 80)
 print('FUNÇÃO - OPERAÇÕES')
@@ -129,8 +128,8 @@ print()
 # Criar loop menu "while bool:"
 while True:
 
-    # Chamar função "a = function()"
-    menu = print_menu()
+    # Chamar função "function()"
+    print_menu()
     print()
 
     # Chamar função números "a = function(arg_1, arg_2, arg_3)"

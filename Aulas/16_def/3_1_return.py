@@ -18,7 +18,7 @@ def calcular_velocidade_media(distancia, tempo):
     # Formular velocidade média "x = a / b"
     velocidade_media = distancia / tempo
     
-    # Chamar variável "return x"
+    # Chamar variável da fórmula "return x"
     return velocidade_media
 
 # Entrada usuário "x = float(input('string'))"
