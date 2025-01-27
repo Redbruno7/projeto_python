@@ -18,19 +18,17 @@ def title():
 
 # Receber informações
 def get_input():
-
-    # Loop condicional "while bool:"
+    data_list = []
+    
+    print('=' * 70)
     while True:
-        print('=' * 70)
+        
         heigth = input('Digite a altura: ').strip()
 
-        # Condicionar existência "if a.replace('old', 'new', count).isdigit():"
-        if heigth.replace('.', '', 1).isdigit():
-
-            # Quebrar loop "break"
+        if heigth.replace('.', '').isdigit():
+            data_list.append(float(height))
             break
 
-        # Fechar condição "else:"
         else:
             print('-' * 70)
             print('Valor inválido. Tente novamente.')
@@ -41,6 +39,7 @@ def get_input():
         weigth = input('Digite o peso: ').strip()
         
         if weigth.replace('.', '', 1).isdigit():
+            data_list.append(float(weight))
             break
 
         else:
@@ -49,17 +48,18 @@ def get_input():
             print('-' * 70)
     
     # Retornar valores "return a, b"
-    return heigth, weigth
+    return data_list
 
 # Cálculo IMC
-def imc_calculate(height, weight):
+def imc_calculate(data_list):
+    height, weight = data_list
     imc = weight * (height ** 2)
     return imc
 
 # Programa Principal
 title()
-height, weight = get_input()
-imc = imc_calculate(height, weight)
+data_list = get_input()
+imc = imc_calculate(data_list)
 
 print('=' * 70)
 print(f'O IMC da pessoa informada é: {imc}')
