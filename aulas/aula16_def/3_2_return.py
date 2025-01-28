@@ -8,7 +8,7 @@ os.system('cls')
 
 # Título
 print('=' * 80)
-print('DEF - RETURN')
+print('FUNÇÃO - RETURN')
 print('=' * 80)
 print()
 
