@@ -1,23 +1,5 @@
-# ALUNO: BRUNO C. RODGERS
-# Data: 23/01/2025
-# Criar função:
-# º Receber lista de números.
-# º Retornar 2 listas (pares, ímpares)
-# º Retornar quantidade (pares, ímpares)
-
-import os
-
-
-os.system('cls')
-
-# Título
-print('=' * 70)
-print('FUNÇÃO NÚMEROS PARES / ÍMPARES')
-print('=' * 70)
-print()
-
-# Definir função "def a():"
-def numbers():
+# Função receber números
+def get_numbers():
     
     # Criar lista "list = []"
     number_list = []
@@ -54,14 +36,3 @@ def numbers():
 
     # Retornar resultados "return a, b"
     return even_list, odd_list, even_count, odd_count
-
-# Chamar função
-even_list, odd_list, even_count, odd_count = numbers()
-print('=' * 70)
-print(f'Lista par: {even_list}')
-print(f'Quantidade de elementos: {even_count}')
-print('-' * 70)
-print(f'Lista ímpar: {odd_list}')
-print(f'Quantidade de elementos: {odd_count}')
-print('=' * 70)
-print()
