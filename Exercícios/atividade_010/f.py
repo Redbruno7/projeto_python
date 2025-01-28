@@ -21,20 +21,29 @@ def title():
     print()
 
 # Listas
-def lists():
+def create_lists():
     list_1 = ['Nome', 'Peso', 'Altura']
     list_2 = ['John', '40', '1.80']
 
     return list_1, list_2
 
+# Dicionário
+def create_dict(list_1, list_2):
+    
+    john_dict = {}
+    
+    for i in range(len(list_1)):
+        john_dict[list_1[i]] = list_2[i]
+        
+    return john_dict
+
 # Invocar função
 title()
+list_1, list_2 = create_lists()
+john_dict = create_dict(list_1, list_2)
 
 print('=' * 70)
-list_1, list_2 = lists()
-
-
-
-print(f'{list_1}')
+for key, value in john_dict.items():    
+    print(f'{key}: {value}')
 print('=' * 70)
 print()
