@@ -1,6 +1,6 @@
 # Função título
 def title():
     print('=' * 80)
-    print('FUNÇÃO NÚMEROS PARES / ÍMPARES')
+    print('CADASTRO DE USUÁRIO'.center(80))
     print('=' * 80)
     print()
