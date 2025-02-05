@@ -1,5 +1,5 @@
 # ALUNO: BRUNO C. RODGERS
-# Data: 23/01/2025
+# Data: 05/02/2025
 # Crie uma função que receba uma temperatura em fahrenheit e retorne o valor em graus célsius.
 
 import os

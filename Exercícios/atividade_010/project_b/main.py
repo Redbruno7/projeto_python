@@ -1,5 +1,5 @@
 # ALUNO: BRUNO C. RODGERS
-# Data: 30/01/2025
+# Data: 04/02/2025
 # Crie uma função para cadastrar:
 # º Nome de um aluno(a);
 # º Matrícula;

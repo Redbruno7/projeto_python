@@ -1,5 +1,5 @@
 # ALUNO: BRUNO C. RODGERS
-# Data: 24/01/2025
+# Data: 04/02/2025
 # Crie uma função para verificar o registro de um aluno em um dicionário. 
 # Imprimir registros do aluno. 
 # Registros:
