@@ -18,7 +18,7 @@ def clear_terminal():
     os.system('cls')
 
 # Nav
-cls_terminal = clear_terminal()
+clear_terminal()
 title()
 
 # Software
