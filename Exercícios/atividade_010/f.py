@@ -6,7 +6,6 @@
 # º Criar um dicionário par chave e valor utilizando como base as duas listas. 
 # º Imprimir esse dicionário com laço for.
 
-
 import os
 
 # Limpeza de terminal
