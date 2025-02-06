@@ -33,7 +33,7 @@ else:
     print(f'{a} não é diferente de {c}')
 
 # Maior que (>)
-if a > b:
+if a    > b:
     print('~'*70)
     print(f'{a} é maior que {b}')
     print('~'*70)

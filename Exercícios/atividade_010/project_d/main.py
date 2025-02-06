@@ -25,24 +25,25 @@ print()
 while True:
     print('=' * 80)
     try_again = input('Tentar novamente? (s/n): ').strip().lower()
-    
+
     if try_again == 's':
         clear_terminal()
         title()
+
         temp_c, temp_f = conversion()
+
         print('-' * 80)
         print(f'A temperatura de {temp_f} ºF, resulta em {temp_c:.0f} ºC.')
         print('=' * 80)
         print()
-        
+
     elif try_again == 'n':
-        
         print('-' * 80)
         print('Sistema encerrado.')
         print('=' * 80)
         print()
         break
-    
+
     else:
         print('-' * 80)
         print('Resposta inválida. Tente novamente.')
