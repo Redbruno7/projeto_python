@@ -1,18 +1,18 @@
 # ALUNO: BRUNO C. RODGERS
 # Data: 23/01/2025
-# Uma Academia deseja fazer uma pesquisa entre seus clientes para descobrir a média de altura  e peso de seus clientes. 
-# Faça um programa que pergunte a cada um dos clientes da academia seu código, nome, altura e peso. 
-# Após esse cadastramento, seu programa deverá listar os dados dos clientes e a média. 
-# Para sair do programa o usuário deverá digitar o valor zero(0). O número de clientes é indefinido. Veja a saída no próximo slide.
-
+# º Crie um programa de cadastro:
+#   - Código do cliente;
+#   - Nome;
+#   - Altura;
+#   - Peso;
+# ° Imprimir:
+#   - Dados dos clientes;
+#   - Média altura;
+#   - Média peso.
+# º Finalizar programa com código "0"
 
 import os
 
-
-os.system('cls')
-
-# Título
-print('=' * 70)
-print('')
-print('=' * 70)
-print()
+# Limpeza terminal
+def clear_terminal():
+    os.system('cls')
