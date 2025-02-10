@@ -87,15 +87,43 @@ client_list = []
 while True:
     client_list.append(client_dict())
 
-    option_exit = input('Digite "0" para finalizar cadastros: ').strip()
+    print('=' * 80)
+    option_exit = input(
+        'Aperte "0" para sair ou "Enter" para continuar cadastrando: '
+        ).strip()
+    print('=' * 80)
+    print()
 
     if option_exit != '0':
-        client_list.append(client_dict())
-    
+        continue
+
     else:
+        cls_terminal()
+        title()
+
+        if client_list:
+            total_height = sum(i['altura'] for i in client_list)
+            total_weight = sum(i['peso'] for i in client_list)
+            average_height = total_height / len(client_list)
+            average_weight = total_weight / len(client_list)
+
+        # Output
         print('=' * 80)
         print('Lista de clientes:')
-        print('-' * 80)
-        print(client_list)
         print('=' * 80)
         print()
+        
+        for i in client_list:
+            print('=' * 80)
+            for key, value in i.items():
+                print(f'{key}: {value}')
+            print('=' * 80)
+            print()
+
+        print('=' * 80)
+        print(f'Média de altura: {average_height:.2f}')
+        print('-' * 80)
+        print(f'Média de peso: {average_weight:.2f}')
+        print('=' * 80)
+        print()
+        break
