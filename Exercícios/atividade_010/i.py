@@ -9,5 +9,3 @@ import os
 
 
 os.system('cls')
-
-teste1
