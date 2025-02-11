@@ -10,8 +10,4 @@ import os
 
 os.system('cls')
 
-# Título
-print('=' * 70)
-print('')
-print('=' * 70)
-print()
+teste
