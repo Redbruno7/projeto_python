@@ -9,7 +9,7 @@ from packs.show import show_diary
 def main():
     os.system('cls')
 
-    diact_dict = {}
+    diary_dict = {}
 
     while True:
         print('=' * 80)
@@ -24,10 +24,10 @@ def main():
         print()
 
         if option == '1':
-            register_appointment(diact_dict)
+            register_appointment(diary_dict)
 
         elif option == '2':
-            show_diary(diact_dict)
+            show_diary(diary_dict)
 
         elif option == '3':
             print('=' * 80)
